@@ -1,5 +1,3 @@
-# devops-netology
-# Thanks to the addition .gitignore the following files will be ignored in the future.
 # Local .terraform directories
 **/.terraform/*
 
