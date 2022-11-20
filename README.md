@@ -34,3 +34,6 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+#Homework for the lecture "Branching in Git"
+https://imgur.com/a/EdIg77b
