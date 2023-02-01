@@ -5,37 +5,37 @@
 	удостоверьтесь, что с помощью systemctl процесс корректно стартует, завершается, а после перезагрузки автоматически поднимается.
 
 Ответ:
-порт  9100 проброшен на хостовую машину
-установим node_exporter:
-sudo apt install prometheus-node-exporter
-поместите его в автозагрузку:
-создадим пользователя под которым будет запускать:
-sudo useradd node_exporter -s /sbin/nologin
-sudo mkdir -p /etc/sysconfig
-sudo touch /etc/sysconfig/node_exporter
-sudo nano /etc/systemd/system/node_exporter.service
+    порт  9100 проброшен на хостовую машину
+    установим node_exporter:
+    sudo apt install prometheus-node-exporter
+    поместите его в автозагрузку:
+    создадим пользователя под которым будет запускать:
+    sudo useradd node_exporter -s /sbin/nologin
+    sudo mkdir -p /etc/sysconfig
+    sudo touch /etc/sysconfig/node_exporter
+    sudo nano /etc/systemd/system/node_exporter.service
 
 unit-файл:
 
 [Unit]
-Description=Node Exporter
+    Description=Node Exporter
 
 [Service]
-User=node_exporter 
-EnvironmentFile=/etc/sysconfig/node_exporter 
-ExecStart=/usr/bin/prometheus-node-exporter $EXTRA_OPTS
-StandardOutput=file:/var/log/node_explorer.log
-StandardError=file:/var/log/node_explorer.log
+    User=node_exporter 
+    EnvironmentFile=/etc/sysconfig/node_exporter 
+    ExecStart=/usr/bin/prometheus-node-exporter $EXTRA_OPTS
+    StandardOutput=file:/var/log/node_explorer.log
+    StandardError=file:/var/log/node_explorer.log
 
 [Install]
-WantedBy=multi-user.target
+    WantedBy=multi-user.target
 
 Опции можно добавить через:
-ExecStart=/usr/bin/prometheus-node-exporter $EXTRA_OPTS
+    ExecStart=/usr/bin/prometheus-node-exporter $EXTRA_OPTS
 
 удостоверьтесь, что с помощью systemctl процесс корректно стартует:
-Скриншот вывода sudo systemctl status node_exporter
-https://imgur.com/a/P0R0pr9
+    Скриншот вывода sudo systemctl status node_exporter
+    https://imgur.com/a/P0R0pr9
 
 journalctl -u node_exporter.service
 -- Logs begin at Tue 2022-06-07 11:55:04 UTC, end at Mon 2023-01-30 04:17:01 UTC. --
@@ -80,7 +80,9 @@ netdata 650 netdata   52u  IPv4  36736      0t0  TCP vagrant:19999->_gateway:532
 4. Можно ли по выводу dmesg понять, осознает ли ОС, что загружена не на настоящем оборудовании, а на системе виртуализации?
 
 Ответ:
+
 Судя по выводу dmesg да
+
 vagrant@vagrant:~$ dmesg |grep virtualiz
 [    0.016232] CPU MTRRs all blank - virtualized system.
 [    0.102563] Booting paravirtualized kernel on KVM
