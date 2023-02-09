@@ -244,18 +244,7 @@ https://imgur.com/a/ysPyFAh
 
 Ответ:
 
-<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=5,IE=9" ><![endif]-->
-<!DOCTYPE html>
-<html>
-<head>
-<title>diagrams.html</title>
-<meta charset="utf-8"/>
-</head>
-<body>
-<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2023-02-09T19:13:48.329Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 YaBrowser/23.1.1.1138 Yowser/2.5 Safari/537.36\&quot; etag=\&quot;dLEBzyxf9rvQELJrMUJz\&quot; version=\&quot;20.8.18\&quot; type=\&quot;device\&quot;&gt;&lt;diagram name=\&quot;Страница 1\&quot; id=\&quot;wyY8NhE26C2i0Bwluqy5\&quot;&gt;7Vpdc6M2FP01flwPkgyGR38kabbpTmbS7nafOsQotroCubIc2/31lZAwCGzixBA2Hecl1tEnuudeHV3ooUm8veHhcvEbizDtQSfa9tC0ByFwHCj/KWSnEdcLNDDnJDKNcuCB/IuzngZdkwivrIaCMSrI0gZnLEnwTFhYyDnb2M2eGLVnXYZzXAEeZiGtot9IJBYGBdljqIpfMJkvzNQ+HOqKOMwamydZLcKIbQoQuuqhCWdM6F/xdoKp2rxsX3S/6yO1+4VxnIhTOkymnz+vh/HNr9/RHwIMr8UtDz7BgVmc2GVPjCO5AabIuFiwOUtCepWjY87WSYTVsI4s5W3uGFtKEEjwbyzEzlgzXAsmoYWIqal9YomYMMp4OiNy0j+J4yQaKZtJOGEJ1sg1odRMpdeqFnh0Dwy0Yms+wzUP7u8tIKmLWYwF38l+HNNQkGd7/NBwaL5vt+96z4icGTqG72hgjG3YjjLjZ0OIkM+xML1yY8kfhWXkUGrCV5jT17M9h3RtHqEHPSq3Zvwof8xFuocaUDZI/SYzg/fPmukGmUEKkO77ZfSwH49nIAhgH3h+H/Sh6nOtKKXbyIKexZ4571poWFhfiY8VsnjeZCIbPmMuiHTUESXzRNYJRb49ehc+YnrPVkQQpmofmRAslg1oqWImqYPl2OPQjLMHCoRla0FJgif7IKPY+CSJWVjYJP2T+Epw9gMXajzfB2Mka+Y8jAjOH8eQPIOnhMvR9bIS5Vb7wbLQAxWyCJdqa+LtXIXcfoLFhvEfq/5KMJ5GM7OHaivwtt5Tqh6QdYA2k+HQlDeFKOgYbFEIgHvwkNdYfH8tuZFT4cZPHKvwlog/1W/pHKb4PS26rilOt4Wm012hcI85kXumWKixRO6fHiyAfgbo4XxnmAH5gGlpVyyVh2wwlAJz4unYVtNw2ErMHXjdxtzs8euC7jfy6ZrINu7NSSFPzir1DS44+4yytVzEeLMgAj8sw9QgG+n/NlkrMayBSOBCz44EwYmRwGsrEGQS630DQcEJB4FnOyEAb3LC9nXQiz5ZkKKNOqVTckq/RAYdVVpzyuM++RbdU/FnSSZlxRotBCwl9JLkOaKXLkrobUpoI7tTvFr9Fcv7aNxMGERuSRC5J4bBoK0wCFC7JP/9ax3BkXtheHcMj1lCBGvohEclBeWiKrX9Qwe829YB73d8wLvW8f5zHu0v6vJMB7+oAXQgOUMDnGds53T9DPuDD6igy0fHAHauoL0uHOytPrGSDBalFk36yalauaX7a0kqg7LVW5bKCJzFBfDOaZW6WxjqOBMSnBpwz2XSeXk02PHp6g/t8zU/bt/jhC0k5rJMXGEVr8rLNUgdcPJh3S13UBfBoqjMStQJ3pU7TRr81FOnY4Of94LwYvDcjvBjGNyryPG70ZcKCaQaFrbN7Kuw2c3ivdlAFYVdvtzHJIpSGh2S6vY5dMysCs8oChpQ8LCc/AmCioL3Dgh41JqABxUrVS5Nt2p/Eyw+/oUJDLq+MAVHt7uRVNv9pC7VZmfaDuXVDmbfLpm2JjJty1kznPZ8t3TNq4aQg5wetpY/Pp54aYTUNFwq9tQQ27sQuztiG/M0Q+4Alc7HrgM2OH5ANkLuURJxJldQ9wrQ/hrq8obkXekds0dCcTP0HkJo0RsFboXe7gF2t/ctVHaZaIvet8uFskYduy9vuP837LaViTsArbFbFvMvnnUGO/9uHF39Bw==&lt;/diagram&gt;&lt;/mxfile&gt;&quot;,&quot;toolbar&quot;:&quot;pages zoom layers lightbox&quot;,&quot;page&quot;:0}"></div>
-<script type="text/javascript" src="https://app.diagrams.net/js/viewer-static.min.js"></script>
-</body>
-</html>
+![](Screenshots/diagrams.png)
 
 Ссылка на скриншот:
 
