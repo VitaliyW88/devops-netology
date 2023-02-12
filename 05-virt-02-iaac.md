@@ -57,9 +57,7 @@ ansible 2.9.6
   executable location = /home/vagrant/bin/ansible
   python version = 3.8.10 (default, Mar 15 2022, 12:22:08) [GCC 9.4.0]
 
-Ссылка на скриншот:
-
-https://imgur.com/a/oiwRAXI
+![](Screenshots/5.3_1.png)
 
 Задача 4
 
@@ -75,9 +73,7 @@ docker ps
 
 Создал виртуальную машину используя Vagrantfile из задания.
 
-Ссылка на скриншот:
-
-https://imgur.com/a/2m8ZsUO
+![](Screenshots/5.3_2.png)
 
 Так как Windows не потдерживает Ansible получил такой ответ при выполнении команды vagrant provision.
 
@@ -88,6 +84,4 @@ Please check https://docs.ansible.com/intro_installation.html#control-machine-re
 
 Установил docker выполнив команды, из provision.yml, вручную.
 
-Ссылка на скриншот:
-
-https://imgur.com/a/CR0Xzt1
+![](Screenshots/5.3_3.png)
