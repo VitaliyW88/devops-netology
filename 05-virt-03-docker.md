@@ -21,18 +21,27 @@ Hey, Netology
 Ответ:
 
 1.Загружаем образ nginx командой $docker pull nginx
+
 2.Создаём dockerfile $touch dockerfile и прописываем в нём:
+
 FROM nginx
+
 RUN echo '<html><head>Hey, Netology</head><body><h1>I am DevOps Engineer!</h1></body></html>' > /usr/share/nginx/html/index.html
+
 3.Собираем свой образ nginx $docker build -f dockerfile -t vitaliyw88/nginx:1.0 .
 ![](Screenshots/5.3.3.png)
 4.Запускаем образ командой $docker run -it --rm -d -p 20011:80 --name wed vitaliyw88/nginx:1.0
 ![](Screenshots/5.3.4.png)
 5.Публикуем созданный образ в Docker Hub 
+
 $ docker login
+
 $ docker tag vitaliyw88/nginx:1.0 vitaliyw88/nginx
+
 $ docker push vitaliyw88/nginx
+
 Ссылка на репозиторий:
+
 https://hub.docker.com/r/vitaliyw88/nginx/tags
 
 Задача 2
