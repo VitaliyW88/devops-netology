@@ -14,15 +14,7 @@ $ mkdir /home/vagrant/postgresql/backup
 
 2.Cоздадим docker-compose.yml файл:
 
-version: '2.1'
-services:
-  db:
-    image: postgres:12
-    environment:
-      POSTGRES_PASSWORD: example
-    volumes:
-      - /home/vagrant/postgresql/data:/var/db-data
-      - /home/vagrant/postgresql/backup:/var/db-backup
+![](Screenshots/6.2.13.png)
 
 3.Проверим что сервис собирается и стартует:
 
