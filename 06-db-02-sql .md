@@ -157,6 +157,7 @@ WHERE table_name in ('orders','clients');
 ![](Screenshots/6.2.29.png)
 
 Задача 3
+
 Используя SQL-синтаксис, наполните таблицы следующими тестовыми данными:
 
 Таблица orders
@@ -169,7 +170,7 @@ WHERE table_name in ('orders','clients');
 | Монитор | 7000 |
 | Гитара | 4000 |
 
-|Таблица clients
+Таблица clients
 
 | ФИО | Страна проживания |
 | --- | --- |
@@ -188,4 +189,76 @@ WHERE table_name in ('orders','clients');
 - результаты их выполнения.
 
 Ответ:
+
+1.Таблица orders;
+
+insert into orders(title, price) VALUES ('Шоколад', 10);
+
+insert into orders(title, price) VALUES ('Принтер', 3000);
+
+insert into orders(title, price) VALUES ('Книга', 500);
+
+insert into orders(title, price) VALUES ('Монитор', 7000);
+
+insert into orders(title, price) VALUES ('Гитара',4000);
+
+select * from orders;
+
+![](Screenshots/6.2.31.png)
+
+2.Таблица clients:
+
+insert into clients (surname, from_country_id, from_country_name) VALUES ('Иванов Иван Иванович', 1, 'USA');
+
+insert into clients (surname, from_country_id, from_country_name) VALUES ('Петров Петр Петрович', 2, 'Canada');
+
+insert into clients (surname, from_country_id, from_country_name) VALUES ('Иоганн Себастьян Бах', 3, 'Japan');
+
+insert into clients (surname, from_country_id, from_country_name) VALUES ('Ронни Джеймс Дио', 4, 'Russia');
+
+insert into clients (surname, from_country_id, from_country_name) VALUES ('Ritchie Blackmore', 4, 'Russia');
+
+test_db=# select * from clients;
+
+![](Screenshots/6.2.32.png)
+
+Задача 4
+
+Часть пользователей из таблицы clients решили оформить заказы из таблицы orders.
+
+Используя foreign keys, свяжите записи из таблиц, согласно таблице:
+
+| ФИО | Заказ |
+| --- | --- |
+| Иванов Иван Иванович | Книга |
+| Петров Петр Петрович | Монитор |
+| Иоганн Себастьян Бах | Гитара |
+
+Приведите SQL-запросы для выполнения этих операций.
+
+Приведите SQL-запрос для выдачи всех пользователей, которые совершили заказ, а также вывод этого запроса.
+
+Подсказка: используйте директиву UPDATE.
+
+Ответ:
+
+UPDATE clients set order_id = orders.id from orders where orders.title like 'Книга' and clients.surname like 'Иванов Иван Иванович';
+
+UPDATE clients set order_id = orders.id from orders where orders.title like 'Монитор' and clients.surname like 'Петров Петр Петрович';
+
+UPDATE clients set order_id = orders.id from orders where orders.title like 'Гитара' and clients.surname like 'Иоганн Себастьян Бах';
+
+select * from clients;
+
+![](Screenshots/6.2.41.png)
+
+Задача 5
+
+Получите полную информацию по выполнению запроса выдачи всех пользователей из задачи 4 (используя директиву EXPLAIN).
+
+Приведите получившийся результат и объясните, что значат полученные значения.
+
+Ответ:
+
+
 
