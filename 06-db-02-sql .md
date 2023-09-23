@@ -288,3 +288,30 @@ explain показывает шаги формирования ответа с �
 
 Ответ:
 
+1.Делаем backup базы:
+
+pg_dump -U postgres test_db > test_db.dump
+
+![](Screenshots/6.2.61.png)
+
+2.Останавливаю контейнер (проверяю, что нет запущенных контейнеров):
+
+$ sudo docker compose stop
+
+![](Screenshots/6.2.62.png)
+
+3.Поднимем новый контейнер:
+
+$ sudo docker compose up -d
+
+![](Screenshots/6.2.63.png)
+
+4.Восстанавливаю БД из файла и проверяем:
+
+psql -U postgres -d test_db -f test_db.dump
+
+select * from clients;
+
+select * from orders;
+
+![](Screenshots/6.2.64.png)
