@@ -260,5 +260,17 @@ select * from clients;
 
 Ответ:
 
+select clients, order_id, orders.id from clients, orders where orders.title like 'Книга' and clients.surname like 'Иванов Иван Иванович';
 
+explain select clients, order_id, orders.id from clients, orders where orders.title like 'Книга' and clients.surname like 'Иванов Иван Иванович';
+
+![](Screenshots/6.2.51.png)
+
+explain показывает шаги формирования ответа с некоторыми параметрами, а именно:
+
+| Параметр | описание |
+| --- | --- |
+| cost | Абстрактное число указывающее затраченное для выполнения время. Первое число - время затраченное на выполнения запроса первой записи таблицы, второе - всех записей |
+| rows | Предпологаемое количество возвращаемых строк |
+| width | Предпологаемый средний размер одной строки в байтах |
 
