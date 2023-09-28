@@ -30,9 +30,9 @@
 
 ![](Screenshots/6.3.13.png)
 
-$ sudo docker exec -it docker-compose-yam-mysql-db-1 bash
+    $ sudo docker exec -it docker-compose-yam-mysql-db-1 bash
 
-mysql -u root -p
+    mysql -u root -p
 
 4.Вывод help
 
@@ -44,23 +44,23 @@ mysql -u root -p
 
 6.Создадим базу данных test_db, загрузим dump базы и подключимся к ней.
 
-create database test_db;
+    create database test_db;
 
-mysql test_db < test_dump.sql -u root -p
+    mysql test_db < test_dump.sql -u root -p
 
-mysql -u root -p
+    mysql -u root -p
 
-connect test_db
+    connect test_db
 
 ![](Screenshots/6.3.16.png)
 
 7.Получите список таблиц из этой БД и количество записей с price > 300
 
-SHOW DATABASES;
+    SHOW DATABASES;
 
-SHOW tables;
+    SHOW tables;
 
-select * from orders where price > 300;
+    select * from orders where price > 300;
 
 ![](Screenshots/6.3.17.png)
 
@@ -83,7 +83,7 @@ select * from orders where price > 300;
 
 1.Создаём пользователя с заданными параметрами
 
-mysql> CREATE USER 'test'@'localhost'
+    mysql> CREATE USER 'test'@'localhost'
 
     -> IDENTIFIED WITH mysql_native_password BY 'test-pass'
 
@@ -97,11 +97,11 @@ mysql> CREATE USER 'test'@'localhost'
 
 2.Предоставьте привелегии пользователю
 
-GRANT SELECT ON test_db.* TO 'test'@'localhost';
+    GRANT SELECT ON test_db.* TO 'test'@'localhost';
 
 3.Данные по пользователю test
 
-SELECT * FROM INFORMATION_SCHEMA.USER_ATTRIBUTES WHERE USER = 'test' AND HOST = 'localhost';
+    SELECT * FROM INFORMATION_SCHEMA.USER_ATTRIBUTES WHERE USER = 'test' AND HOST = 'localhost';
 
 ![](Screenshots/6.3.21.png)
 
