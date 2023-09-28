@@ -18,6 +18,52 @@
 
 Ответ:
 
+1.Создадим docker-compose файл
+
+![](Screenshots/6.3.11.png)
+
+2.Передадим дамп базы и соберем сервис
+
+![](Screenshots/6.3.12.png)
+
+3.Запустим серви, зайдем в контейнер и выполним задание
+
+![](Screenshots/6.3.13.png)
+
+$ sudo docker exec -it docker-compose-yam-mysql-db-1 bash
+
+mysql -u root -p
+
+4.Вывод help
+
+![](Screenshots/6.3.14.png)
+
+5.Команда status
+
+![](Screenshots/6.3.15.png)
+
+6.Создадим базу данных test_db, загрузим dump базы и подключимся к ней.
+
+create database test_db;
+
+mysql test_db < test_dump.sql -u root -p
+
+mysql -u root -p
+
+connect test_db
+
+![](Screenshots/6.3.16.png)
+
+7.Получите список таблиц из этой БД и количество записей с price > 300
+
+SHOW DATABASES;
+
+SHOW tables;
+
+select * from orders where price > 300;
+
+![](Screenshots/6.3.17.png)
+
 Задача 2
 
 Создайте пользователя test в БД c паролем test-pass, используя:
