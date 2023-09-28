@@ -81,6 +81,30 @@ select * from orders where price > 300;
 
 Ответ:
 
+1.Создаём пользователя с заданными параметрами
+
+mysql> CREATE USER 'test'@'localhost'
+
+    -> IDENTIFIED WITH mysql_native_password BY 'test-pass'
+
+    -> WITH MAX_QUERIES_PER_HOUR 100
+
+    -> PASSWORD EXPIRE INTERVAL 180 DAY
+
+    -> FAILED_LOGIN_ATTEMPTS 3
+
+    -> ATTRIBUTE '{"fname": "James", "lname": "Pretty"}';
+
+2.Предоставьте привелегии пользователю
+
+GRANT SELECT ON test_db.* TO 'test'@'localhost';
+
+3.Данные по пользователю test
+
+SELECT * FROM INFORMATION_SCHEMA.USER_ATTRIBUTES WHERE USER = 'test' AND HOST = 'localhost';
+
+![](Screenshots/6.3.21.png)
+
 Задача 3
 
 Установите профилирование SET profiling = 1. Изучите вывод профилирования команд SHOW PROFILES;.
