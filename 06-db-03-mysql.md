@@ -155,4 +155,4 @@
 
 ![](Screenshots/6.3.41.png)
 
-[my.cnf](https://github.com/VitaliyW88/devops-netology/blob/78dc8dc7869044b92eb7bfc8621781ed1df35e9b/Files/my.cnf)
+Измененный файл [my.cnf](https://github.com/VitaliyW88/devops-netology/blob/78dc8dc7869044b92eb7bfc8621781ed1df35e9b/Files/my.cnf)
