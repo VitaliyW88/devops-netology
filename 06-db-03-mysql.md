@@ -150,3 +150,9 @@
 Приведите в ответе изменённый файл my.cnf.
 
 Ответ:
+
+Доступная память на виртуальном хосте 2 гб, они все доступны контейнеру, 30% это 614 мб. 
+
+![](Screenshots/6.3.41.png)
+
+[my.cnf](https://github.com/VitaliyW88/devops-netology/blob/78dc8dc7869044b92eb7bfc8621781ed1df35e9b/Files/my.cnf)
