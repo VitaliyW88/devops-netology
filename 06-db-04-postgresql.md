@@ -16,6 +16,42 @@
 
 Ответ:
 
+1.Создадим docker-compose файл.
+
+2.Создадим сервис, запустим его, подключимся к контейнеру и psql.
+
+![](Screenshots/6.4.12.png)
+
+3.Вывод списка БД.
+
+    \l+ *
+
+![](Screenshots/6.4.13.png)
+
+4.Подключение к БД.
+
+    \connect postgres;
+
+![](Screenshots/6.4.14.png)
+
+5.Вывод списка таблиц.
+
+    \dtS+
+
+![](Screenshots/6.4.15.png)
+
+6.Вывод описания содержимого таблиц.
+
+    \dS+ pg_user_mapping
+
+![](Screenshots/6.4.16.png)
+
+7.Выход из psql.
+
+    exit
+
+![](Screenshots/6.4.17.png)
+
 Задача 2
 
 Используя psql, создайте БД test_database.
