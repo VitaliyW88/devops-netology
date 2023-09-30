@@ -78,8 +78,6 @@
 
     chown postgres:postgres /var/db-backup/
 
-    $ psql --dbname=test_database --file=test_dump.sql
-
 ![](Screenshots/6.4.21.png)
 
 2.Копируем бэкап БД в докер, создадим бд в контейнере и загрузим backup.
@@ -87,6 +85,9 @@
     CREATE TABLESPACE "test-tablespace" OWNER CURRENT_USER LOCATION '/var/db-data';
 
     CREATE DATABASE "test_database" WITH TABLESPACE = "test-tablespace";
+
+    $ psql --dbname=test_database --file=test_dump.sql
+
 
 ![](Screenshots/6.4.22.png)
 
