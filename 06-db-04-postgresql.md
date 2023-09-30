@@ -131,7 +131,7 @@
 
 Ответ:
 
-1.выгрузим dump и назавём его [dump_test_database.sql](jetbrains://pycharm/navigate/reference?project=devops-netology&path=Files/dump_test_database.sql)
+1.выгрузим dump и назавём его [dump_test_database.sql](https://github.com/VitaliyW88/devops-netology/blob/c438725835d0138bce4e0d07ded88bba97ab2465/Files/dump_test_database.sql)
 
     pg_dump -U postgres -d test_database > dump_test_database.sql
 
