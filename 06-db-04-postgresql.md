@@ -130,3 +130,29 @@
 Как бы вы доработали бэкап-файл, чтобы добавить уникальность значения столбца title для таблиц test_database?
 
 Ответ:
+
+1.выгрузим dump и назавём его [dump_test_database.sql](jetbrains://pycharm/navigate/reference?project=devops-netology&path=Files/dump_test_database.sql)
+
+    pg_dump -U postgres -d test_database > dump_test_database.sql
+
+![](Screenshots/6.4.41.png)
+
+2.Файл бекапа представляет из себя набор SQL команд для воссоздания таблиц. Чтобы добавить уникальность значения столбца title достаточно добавить атрибут UNIQUE, изменить соответствующую команду в бекапе базы.
+
+Например:
+
+было
+
+    CREATE TABLE public.orders (
+        id integer NOT NULL,
+        title character varying(80) NOT NULL,
+        price integer DEFAULT 0
+    );
+
+стало
+
+    CREATE TABLE public.orders (
+        id integer NOT NULL,
+        title character varying(80) UNIQUE NOT NULL,
+        price integer DEFAULT 0
+    );
