@@ -72,6 +72,34 @@
 
 Ответ:
 
+1.Присвоим права на папки для пользователя postgres.
+
+    chown postgres:postgres /var/db-data/
+
+    chown postgres:postgres /var/db-backup/
+
+    $ psql --dbname=test_database --file=test_dump.sql
+
+![](Screenshots/6.4.21.png)
+
+2.Копируем бэкап БД в докер, создадим бд в контейнере и загрузим backup.
+
+    CREATE TABLESPACE "test-tablespace" OWNER CURRENT_USER LOCATION '/var/db-data';
+
+    CREATE DATABASE "test_database" WITH TABLESPACE = "test-tablespace";
+
+![](Screenshots/6.4.22.png)
+
+3.Подключаемся к восстановленной БД и проводим операцию ANALYZE. Используем select для выбора максимального значения.
+
+    \connect test_database;
+
+    analyze;
+
+    select max(avg_width),attname from pg_stats where tablename ='orders' group by attname;
+
+![](Screenshots/6.4.23.png)
+
 Задача 3
 
 Архитектор и администратор БД выяснили, что ваша таблица orders разрослась до невиданных размеров и поиск по ней занимает долгое время. Вам как успешному выпускнику курсов DevOps в Нетологии предложили провести разбиение таблицы на 2: шардировать на orders_1 - price>499 и orders_2 - price<=499.
