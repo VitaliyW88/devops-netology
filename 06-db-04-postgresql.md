@@ -111,6 +111,18 @@
 
 Ответ:
 
+В качестве решения можно использовать следующие транзакции
+
+    CREATE TABLE orders_1 (CHECK (price > 499)) INHERITS (orders);
+
+    CREATE TABLE orders_2 (CHECK (price < 499)) INHERITS (orders);
+
+Информация о таблице orders после выполнения транзакции.
+
+![](Screenshots/6.4.31.png)
+
+Ручного разбиения таблицы можно было избежать изначально спроектировав её разделённой при помощи PARTITION BY.
+
 Задача 4
 
 Используя утилиту pg_dump, создайте бекап БД test_database.
