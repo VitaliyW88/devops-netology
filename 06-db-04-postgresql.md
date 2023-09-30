@@ -48,7 +48,7 @@
 
 7.Выход из psql.
 
-    exit
+    \q
 
 ![](Screenshots/6.4.17.png)
 
